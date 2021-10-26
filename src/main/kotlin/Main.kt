@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     if(idade > 0 && idade < 5){
         desconto = precoIn * 0.6
         precoCo = precoIn - desconto
-        println("O preço do seu ingresso é: $precoCo")
+        println("O preço do seu ingresso é: R$$precoCo")
     }else if(idade >= 5 && idade <= 60){
         println("Você não tem desconto se comprar apenas 1 ingresso: ")
         print("Se deseja mais de 1, informe quantos: ")
@@ -20,14 +20,14 @@ fun main(args: Array<String>) {
             if(quantIngresso > 1){
                 desconto = precoIn * 0.3
                 precoCo = (precoIn - desconto) * quantIngresso
-                println("O preço dos seus ingressos é de: $precoCo")
+                println("O preço dos seus ingressos é de: R$$precoCo")
             }else{
-                println("O preço do seu ingresso é: $precoIn")
+                println("O preço do seu ingresso é: R$$precoIn")
             }
     }else if(idade > 60){
         desconto = precoIn * 0.55
         precoCo = precoIn - desconto
-        println("O preço do seu ingresso é: $precoCo")
+        println("O preço do seu ingresso é: R$$precoCo")
     }else{
         println("Inválido")
     }
