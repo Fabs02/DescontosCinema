@@ -28,7 +28,7 @@ fun main(args: Array<String>) {
         desconto = precoIn * 0.55
         precoCo = precoIn - desconto
         println("O preço do seu ingresso é: $precoCo")
-        }else{
-            println("Inválido")
-        }
+    }else{
+        println("Inválido")
+    }
 }
